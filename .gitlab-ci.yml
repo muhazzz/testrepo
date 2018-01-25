@@ -1,0 +1,31 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - echo "Build... ok"
+
+test unit:
+  stage: test
+  script:
+    - echo "Unit testing... ok"
+
+test integration:
+  stage: test
+  script:
+    - echo "Integration testing... ok"
+
+test selenium:
+  stage: test
+  script:
+    - echo "Selenium testing... ok"
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploy... ok"
+    - echo "========================"
+
